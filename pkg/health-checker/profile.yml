@@ -1,6 +1,6 @@
 monitoring:
   targets:
-    - service: "health-checker"
+    - service: "main-service"
       port: 8090
       path: "/metrics"
 options:
