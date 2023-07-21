@@ -71,3 +71,8 @@ options:
     validate:
       options: ["option1", "option2", "option3"]
     help: "Test option enum"
+hardware_requirements_overrides:
+  min_cpu_cores: 20
+  min_ram: 65536         # ~= 64 Gb
+  min_free_space: 5242880  # ~= 5  Tb
+  stop_if_requirements_are_not_met: false
