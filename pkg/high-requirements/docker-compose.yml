@@ -1,0 +1,6 @@
+  version: '3'
+  services:
+    main-service:
+      image: busybox
+      ports:
+        - "${MAIN_PORT}:8070"
