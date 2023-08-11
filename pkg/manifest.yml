@@ -10,6 +10,6 @@ hardware_requirements:
 plugin:
   build_from: https://github.com/NethermindEth/mock-avs.git#main:plugin
 profiles:
-  - name: high-requirements
-  - name: option-returner
-  - name: health-checker
+  - "high-requirements"
+  - "option-returner"
+  - "health-checker"
