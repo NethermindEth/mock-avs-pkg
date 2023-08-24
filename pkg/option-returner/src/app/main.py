@@ -136,7 +136,6 @@ class BackgroundTasks(threading.Thread):
                 token="EGN"
             ).inc(slashing_egn)
             EIGEN_BALANCE_TOTAL.labels(
-                avs_name="mock-avs",
                 token="ETH"
             ).set(self.eth_balance)
             EIGEN_BALANCE_TOTAL.labels(
