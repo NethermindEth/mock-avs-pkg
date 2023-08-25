@@ -2,8 +2,7 @@ version: '3.8'
 services:
   main-service:
     container_name: ${MAIN_SERVICE_NAME}
-    build:
-      context: ./src
+    image: mock-avs-option-returner:latest
     command:
       - uvicorn
       - app.main:app

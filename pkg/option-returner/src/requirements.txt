@@ -1,2 +1,0 @@
-fastapi==0.97.0
-prometheus-client==0.17.0
