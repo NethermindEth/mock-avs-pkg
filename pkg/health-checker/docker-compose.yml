@@ -2,8 +2,7 @@ version: '3.8'
 services:
   main-service:
     container_name: ${MAIN_SERVICE_NAME}
-    build:
-      context: ./src
+    image: mock-avs-health-checker:latest
     command:
       - uvicorn
       - app.main:app
