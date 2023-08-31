@@ -7,6 +7,11 @@ api:
   service: "main-service"
   port: 8080
 options:
+  - name: "main-image-name"
+    target: MAIN_SERVICE_IMAGE
+    type: str
+    default: "mock-avs-option-returner:latest"
+    help: "Main service image name"
   - name: "main-container-name"
     target: MAIN_SERVICE_NAME
     type: str
