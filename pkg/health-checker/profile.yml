@@ -4,6 +4,11 @@ monitoring:
       port: 8090
       path: "/metrics"
 options:
+  - name: "main-image-name"
+    target: MAIN_SERVICE_IMAGE
+    type: str
+    default: "mock-avs-health-checker:latest"
+    help: "Main service image name"
   - name: "main-container-name"
     target: MAIN_SERVICE_NAME
     type: str
