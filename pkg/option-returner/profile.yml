@@ -10,6 +10,8 @@ options:
   - name: "main-image-name"
     target: MAIN_SERVICE_IMAGE
     type: str
+    validate:
+      re2_regex: "^(?:(?:[a-zA-Z0-9.-]+(?:\\:[0-9]+)?/)?[a-zA-Z0-9_-]+(?:/[a-zA-Z0-9_-]+)?(?:\\:[a-zA-Z0-9_.-]+)?)?$"
     default: "mock-avs-option-returner:latest"
     help: "Main service image name"
   - name: "main-container-name"
