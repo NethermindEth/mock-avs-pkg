@@ -80,6 +80,21 @@ options:
     validate:
       options: ["option1", "option2", "option3"]
     help: "Test option enum"
+  - name: "test-option-hidden"
+    target: TEST_OPTION_HIDDEN
+    type: string
+    validate:
+      re2_regex: "^.{8,}$"
+    hidden: true
+    help: "Test option string hidden"
+  - name: "test-option-enum-hidden"
+    target: TEST_OPTION_ENUM_HIDDEN
+    type: select
+    default: "option1" # Should be ignored
+    validate:
+      options: ["option1", "option2", "option3"]
+    hidden: true
+    help: "Test option enum hidden" 
 hardware_requirements_overrides:
   min_cpu_cores: 20
   min_ram: 65536         # ~= 64 Gb
