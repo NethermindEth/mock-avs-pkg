@@ -82,7 +82,7 @@ options:
     help: "Test option enum"
   - name: "test-option-hidden"
     target: TEST_OPTION_HIDDEN
-    type: string
+    type: str
     validate:
       re2_regex: "^.{8,}$"
     hidden: true
