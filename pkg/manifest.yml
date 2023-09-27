@@ -1,5 +1,5 @@
 version: v0.1.0
-node_version: v3.0.0
+node_version: v5.0.1
 name: mock-avs
 upgrade: recommended
 hardware_requirements:
