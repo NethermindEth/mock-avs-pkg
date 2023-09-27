@@ -12,7 +12,7 @@ options:
     type: str
     validate:
       re2_regex: "^(?:(?:[a-zA-Z0-9.-]+(?:\\:[0-9]+)?/)?[a-zA-Z0-9_-]+(?:/[a-zA-Z0-9_-]+)?(?:\\:[a-zA-Z0-9_.-]+)?)?$"
-    default: "mock-avs-option-returner:v0.1.0"
+    default: "mock-avs-option-returner:v0.2.0"
     help: "Main service image name"
   - name: "main-container-name"
     target: MAIN_SERVICE_NAME
