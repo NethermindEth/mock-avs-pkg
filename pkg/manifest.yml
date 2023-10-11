@@ -8,7 +8,7 @@ hardware_requirements:
   min_free_space: 5120  # ~= 5 Gb
   stop_if_requirements_are_not_met: true
 plugin:
-  image: mock-avs-plugin:v0.2.0
+  image: mock-avs-plugin:v0.2.1
 profiles:
   - "high-requirements"
   - "option-returner"

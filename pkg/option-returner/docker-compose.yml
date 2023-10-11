@@ -13,6 +13,7 @@ services:
     networks:
       - eigenlayer
     environment:
+      - VERSION=v5.5.2
       - MAIN_SERVICE_NAME=${MAIN_SERVICE_NAME}
       - MAIN_PORT=${MAIN_PORT}
       - NETWORK_NAME=${NETWORK_NAME}
